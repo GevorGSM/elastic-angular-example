@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'elastic-angular-example2'`, () => {
+  it(`should have as title 'elastic-angular-example'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('elastic-angular-example2');
+    expect(app.title).toEqual('elastic-angular-example');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('elastic-angular-example2 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('elastic-angular-example app is running!');
   });
 });
